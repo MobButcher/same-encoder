@@ -29,8 +29,8 @@
   "author": "Aaron Miller <me@aaron-miller.me>",
   "license": "MIT",
   "dependencies": {
-    "xtypejs": "0.4.2",
-    "json-query": "~1.5.0"
+    "json-query": "~1.5.0",
+    "xtypejs": "^0.4.2"
   },
   "devDependencies": {
     "browserify": "10.2.1",

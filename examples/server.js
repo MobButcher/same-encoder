@@ -3,11 +3,16 @@ var SAME = require('../index');
 var message = {
   originator: 'PEP',
   code: 'EAN',
-  region: {
+  regions: [{
     subdiv: '0',
     stateCode: '00',
     countyCode: '000'
   },
+	{
+    subdiv: '2',
+    stateCode: '00',
+    countyCode: '000'
+  }],
   length: 600,
   start: {
     day: 123,
@@ -16,6 +21,5 @@ var message = {
   },
   sender: 'WHITEHSE'
 };
-
 SAME.Writer.write(SAME.Encoder.encode(message), './output.wav');
 console.log('Wrote ./output.wav.');
