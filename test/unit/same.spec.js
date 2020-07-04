@@ -19,11 +19,11 @@ var SAME = proxyquire('lib/same', {
 var mockMessage = {
   originator: 'PEP',
   code: 'EAN',
-  regions: [{
+  region: {
     subdiv: '0',
     stateCode: '24',
     countyCode: '510'
-  }],
+  },
   length: 0,
   start: {
     day: 142,
